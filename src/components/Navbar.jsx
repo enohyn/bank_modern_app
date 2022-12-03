@@ -9,7 +9,7 @@ const Navbar = () => {
         <ul className='list-none sm:flex hidden justify-end flex-1 items-center'>
             <div className='flex justify-around'>
             {navLinks.map((nav,index)=>(
-                <li key={nav.id} className={`font-poppins font-normal cursor-pointer ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
+                <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}>
                     <a href={`#${nav.id}`} >
                         {nav.title}
                     </a>
